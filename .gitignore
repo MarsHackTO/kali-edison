@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Logs
+=======
+gs
+>>>>>>> 19ad562d1c75c2768120b7feaf292f144c94ee5f
 logs
 *.log
 
@@ -16,13 +20,24 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+<<<<<<< HEAD
+=======
+# node-waf configuration
+.lock-wscript
+
+>>>>>>> 19ad562d1c75c2768120b7feaf292f144c94ee5f
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directory
+<<<<<<< HEAD
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 
 # Users Environment Variables
 .lock-wscript
+=======
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+>>>>>>> 19ad562d1c75c2768120b7feaf292f144c94ee5f
