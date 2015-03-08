@@ -7,6 +7,15 @@
 
 import bluetooth
 
+# set socket
+print ("bluetooth.BluetoothSocket()")
+ble = bluetooth.BluetoothSocket()
+
+# advertise
+print ("advertise_service()")
+advertise_service(ble, "EdisonKali")
+
+# find service
 print("finding nearby devices")
 nearby_devices = bluetooth.discover_devices(duration=8, lookup_names=True, lookup_class=False)
 
@@ -15,10 +24,7 @@ print("found %d devices" % len(nearby_devices))
 for addr, name in nearby_devices:
     print("  %s - %s" % (addr, name))
 
-
-print ("bluetooth.BluetoothSocket()")
-ble = bluetooth.BluetoothSocket()
-
+# debug
 print("ble.getsockname()")
 print ble.getsockname()
 
