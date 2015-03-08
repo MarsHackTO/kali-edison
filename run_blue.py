@@ -11,7 +11,7 @@ import bluetooth
 print ("bluetooth.BluetoothSocket()")
 ble = bluetooth.BluetoothSocket()
 # listen god damnit
-ble.listen()
+ble.listen(10)
 
 # advertise
 print ("advertise_service()")
