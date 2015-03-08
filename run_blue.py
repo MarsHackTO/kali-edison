@@ -10,7 +10,9 @@ import bluetooth
 # set socket
 print ("bluetooth.BluetoothSocket()")
 ble = bluetooth.BluetoothSocket()
+
 # listen god damnit
+print("listen()")
 ble.listen(10)
 
 # advertise
