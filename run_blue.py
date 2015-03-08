@@ -21,4 +21,4 @@ for addr, name in nearby_devices:
 
 ble = bluetooth.BluetoothSocket()
 
-ble.bind("C0:EE:FB:28:59:87")
+ble.bind(("C0:EE:FB:28:59:87", 0))
