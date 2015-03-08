@@ -7,18 +7,34 @@
 
 import bluetooth
 
-print("performing inquiry...")
-
-'''
-
+print("finding nearby devices")
 nearby_devices = bluetooth.discover_devices(duration=8, lookup_names=True, lookup_class=False)
 
 print("found %d devices" % len(nearby_devices))
 
 for addr, name in nearby_devices:
     print("  %s - %s" % (addr, name))
-'''
 
+
+print ("bluetooth.BluetoothSocket()")
 ble = bluetooth.BluetoothSocket()
 
-ble.bind(("C0:EE:FB:28:59:87", 0))
+print("ble.getsockname()")
+ble.getsockname()
+
+print("blue.fileno()")
+blue.fileno()
+
+print("ble.bind((\"C0:EE:FB:28:59:87\"))")
+ble.bind(("C0:EE:FB:28:59:87"))
+
+print("ble.connect((\"C0:EE:FB:28:59:87\"))")
+ble.connect(("C0:EE:FB:28:59:87"))
+
+
+
+print("ble.send()")
+ble.send("test_send_ble")
+
+print("end run_blue.py")
+ble.close()
