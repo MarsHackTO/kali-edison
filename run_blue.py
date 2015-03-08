@@ -13,7 +13,7 @@ ble = bluetooth.BluetoothSocket()
 
 # advertise
 print ("advertise_service()")
-advertise_service(ble, "EdisonKali")
+bluetooth.advertise_service(ble, "EdisonKali")
 
 # find service
 print("finding nearby devices")
@@ -32,7 +32,7 @@ print("blue.fileno()")
 print ble.fileno()
 
 print("find_service()")
-find_service("OnePlus One")
+bluetooth.find_service("OnePlus One")
 print find_service("OnePlus One")
 
 #print("ble.bind((\"C0:EE:FB:28:59:87\"))")
