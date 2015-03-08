@@ -26,8 +26,8 @@ print("blue.fileno()")
 print ble.fileno()
 
 print find_service()
-find_service(name="OnePlus One", address="C0:EE:FB:28:59:87")
-print find_service(name="OnePlus One", address="C0:EE:FB:28:59:87")
+find_service("OnePlus One")
+print find_service("OnePlus One")
 
 #print("ble.bind((\"C0:EE:FB:28:59:87\"))")
 #ble.bind(("C0:EE:FB:28:59:87", 0))
