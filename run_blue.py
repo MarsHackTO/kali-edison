@@ -19,4 +19,4 @@ for addr, name in nearby_devices:
     print("  %s - %s" % (addr, name))
 '''
 
-bluetooth.bind("C0:EE:FB:28:59:87")
+bluetooth().bind("C0:EE:FB:28:59:87")
