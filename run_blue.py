@@ -23,7 +23,7 @@ print("ble.getsockname()")
 ble.getsockname()
 
 print("blue.fileno()")
-blue.fileno()
+ble.fileno()
 
 print("ble.bind((\"C0:EE:FB:28:59:87\"))")
 ble.bind(("C0:EE:FB:28:59:87"))
