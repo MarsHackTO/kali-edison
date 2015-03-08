@@ -9,10 +9,13 @@ import bluetooth
 
 print("performing inquiry...")
 
-nearby_devices = bluetooth.discover_devices(duration=8, lookup_names=True, lookup_class=False)
+ble = bluetooth
+
+nearby_devices = ble.discover_devices(duration=8, lookup_names=True, lookup_class=False)
 
 print("found %d devices" % len(nearby_devices))
 
 for addr, name in nearby_devices:
     print("  %s - %s" % (addr, name))
 
+ble.connect(ble, (0,))
