@@ -25,13 +25,16 @@ print ble.getsockname()
 print("blue.fileno()")
 print ble.fileno()
 
+print find_service()
+find_service("OnePlus One")
+
 #print("ble.bind((\"C0:EE:FB:28:59:87\"))")
 #ble.bind(("C0:EE:FB:28:59:87", 0))
 
-print("ble.connect((\"C0:EE:FB:28:59:87\"))")
+print("ble.connect")
 ble.connect(("C0:EE:FB:28:59:87", 0))
 
-print("ble.send()")
+print("ble.send")
 ble.send("test_send_ble")
 
 print("end run_blue.py")
