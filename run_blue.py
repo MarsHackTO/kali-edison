@@ -25,7 +25,7 @@ print ble.getsockname()
 print("blue.fileno()")
 print ble.fileno()
 
-print find_service()
+print("find_service()")
 find_service("OnePlus One")
 print find_service("OnePlus One")
 
